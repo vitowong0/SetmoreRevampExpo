@@ -25,6 +25,8 @@ Follow the documentation here, although it's not necessary to run our app: https
 
 To view our web report, [click here](https://vitowong0.github.io/setmoreRevamp-website/) or follow this link: https://vitowong0.github.io/setmoreRevamp-website/
 
+To view the repo for our web report, [click here](https://github.com/vitowong0/setmoreRevamp-website) or follow this link: https://github.com/vitowong0/setmoreRevamp-website
+
 ## Credits (Group 20)
 1. Vito Wong
 2. Xiaoyun Bonato
