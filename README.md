@@ -21,10 +21,9 @@ Follow the documentation here, although it's not necessary to run our app: https
 
 6. Happy booking!
 
-## Report
+## Web report
 
-
-To view our report, [click here](https://vitowong0.github.io/setmoreRevamp-website/) or follow this link: https://vitowong0.github.io/setmoreRevamp-website/
+To view our web report, [click here](https://vitowong0.github.io/setmoreRevamp-website/) or follow this link: https://vitowong0.github.io/setmoreRevamp-website/
 
 ## Credits (Group 20)
 1. Vito Wong
