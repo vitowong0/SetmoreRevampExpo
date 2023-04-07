@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Text,
   View,
@@ -6,14 +6,15 @@ import {
   StatusBar,
   Dimensions,
   FlatList,
-} from 'react-native';
-import Calendar from '../components/calendar/Calendar';
+} from "react-native";
+import { ScrollView } from "react-native-virtualized-view";
 
-import Header from '../components/headers/Header';
-import {Colours} from '../constants/styles';
+import Header from "../components/headers/Header";
+import Calendar from "../components/calendar/Calendar";
+import { Colours } from "../constants/styles";
 
-import BookedAppointmentItem from '../components/items/BookedAppointmentItem';
-import {BOOKEDAPPOINTMENTS} from '../components/data/DummyBookedAppointments';
+import BookedAppointmentItem from "../components/items/BookedAppointmentItem";
+import { BOOKEDAPPOINTMENTS } from "../components/data/DummyBookedAppointments";
 
 function CalendarScreen() {
   function renderBookedAppointmentItem(itemData) {
@@ -30,43 +31,45 @@ function CalendarScreen() {
 
   return (
     <View style={styles.root}>
-      <StatusBar barStyle={'dark-content'} />
+      <StatusBar barStyle={"dark-content"} />
       <View style={styles.header}>
-        <Header headerTitle={'Calendar'} />
+        <Header headerTitle={"Calendar"} />
       </View>
       <View style={styles.bodyContainer}>
-        <View style={styles.legendContainer}>
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <View style={styles.miniCirclePink} />
-            <Text style={styles.legendText}>Booked</Text>
+        <ScrollView>
+          <View style={styles.legendContainer}>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <View style={styles.miniCirclePink} />
+              <Text style={styles.legendText}>Booked</Text>
+            </View>
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <View style={styles.miniCircleBorder} />
+              <Text style={styles.legendText}>No booking</Text>
+            </View>
           </View>
-          <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <View style={styles.miniCircleBorder} />
-            <Text style={styles.legendText}>No booking</Text>
+          <View style={styles.calendarContainer}>
+            <Calendar
+              width={Dimensions.get("window").width}
+              daysBooked={[
+                "2023-04-01",
+                "2023-04-07",
+                "2023-04-08",
+                "2023-04-20",
+                "2023-04-26",
+              ]}
+            />
           </View>
-        </View>
-        <View style={styles.calendarContainer}>
-          <Calendar
-            width={Dimensions.get('window').width}
-            daysBooked={[
-              '2023-04-01',
-              '2023-04-07',
-              '2023-04-08',
-              '2023-04-20',
-              '2023-04-26',
-            ]}
-          />
-        </View>
-        <View style={styles.bottomContainer}>
-          <View style={{paddingHorizontal: 10, paddingVertical: 5}}>
-            <Text style={styles.upcomingText}>Upcoming appointments</Text>
+          <View style={styles.bottomContainer}>
+            <View style={{ paddingHorizontal: 10, paddingVertical: 5 }}>
+              <Text style={styles.upcomingText}>Upcoming appointments</Text>
+            </View>
+            <FlatList
+              data={BOOKEDAPPOINTMENTS}
+              keyExtractor={(item) => item.id}
+              renderItem={renderBookedAppointmentItem}
+            />
           </View>
-          <FlatList
-            data={BOOKEDAPPOINTMENTS}
-            keyExtractor={item => item.id}
-            renderItem={renderBookedAppointmentItem}
-          />
-        </View>
+        </ScrollView>
       </View>
     </View>
   );
@@ -79,19 +82,19 @@ const styles = StyleSheet.create({
 
   header: {
     flex: 1.2,
-    width: '100%',
+    width: "100%",
     marginBottom: -20,
   },
 
   bodyContainer: {
     flex: 7,
-    flexDirection: 'column',
-    backgroundColor: 'white',
+    flexDirection: "column",
+    backgroundColor: "white",
   },
 
   legendContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
+    flexDirection: "row",
+    justifyContent: "space-evenly",
     paddingTop: 20,
   },
 
