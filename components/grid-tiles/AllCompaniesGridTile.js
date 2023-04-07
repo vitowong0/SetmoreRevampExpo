@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
 
   whiteHeart: {
     position: 'absolute',
-    width: 20,
+    width: 22,
     height: 20,
     bottom: 20,
     right: 20,

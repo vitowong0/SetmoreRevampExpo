@@ -87,7 +87,7 @@ function HomeTabs() {
               focused ? (
                 <Image
                   source={favouritesIconGreen}
-                  style={{width: 25, height: 23}}
+                  style={{width: 27, height: 24}}
                 />
               ) : (
                 <Image
