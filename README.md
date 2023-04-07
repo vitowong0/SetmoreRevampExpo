@@ -6,24 +6,20 @@ Our project is to improve the user's experience with _Setmore_, a popular servic
 ## Installation
 We are using React Native with Expo for cross-platform functionality. We set up our app using the instructions for _Expo Go Quickstart_.
 
-Follow the documentation here: https://reactnative.dev/docs/environment-setup
+Follow the documentation here, although it's not necessary to run our app: https://reactnative.dev/docs/environment-setup
 
 ## Usage
-1. Clone this repo onto your local machine. 
+1. Download the _Expo Go_ app from your phone's App Store. A login is **not** required for this to work. 
 
-2. In your IDE of choice, we used Visual Studio Code, `cd` into `./SetmoreRevampExpo`. To ensure you're in the right place, when you run `pwd`, you should get: `whatever/SetmoreRevampExpo/SetmoreRevampExpo`.
+2. Clone this repo onto your local machine. 
 
-2. Open a new terminal of your choice within your IDE and run `npx expo start`. Assuming you followed the above environment setup documentation, Expo should begin. This terminal will show all warnings and errors, and any console.log() from our app will appear here.
+3. In your terminal, `cd` into `SetmoreRevampExpo`, and then again into `cd SetmoreRevampExpo`. (Sorry I goofed the cloning). To ensure you're in the right place, when you run `pwd`, you should get: `whatever/SetmoreRevampExpo/SetmoreRevampExpo`.
 
-    **- Use your device:** With an iPhone, open the Camera app and follow the QR code. With an Android, download _Expo Go_, and follow the instructions there. This QR code will allow you to run our app on your device, while using your IDE's terminal to output text.
-    
-    **- iOS simualtor:** Press i
-    
-    **- Android simulator:** Press a
+4. In the same terminal, run `npx expo start`. You may be asked something about using alternate ports, just type `y`. Metro Bundler should start, a QR code should appear, and some text should show below. Don't close this terminal window as it will be used for all outputs.
 
-3. If you launch via simulator, you may get errors saying you are missing packages. For example, you may be missing the _react-native-reanimated_ package. To install this package, a quick Google search shows the command to be: `npm install react-native-reanimated`. This tends to be the case for most missing packages.
+5. The easiest way is to run this via Expo Go. On an iPhone, open the Camera app and scan the given QR code. On an Android, open Expo Go and use the built in QR code scanner.
 
-4. After successful install of all packages, the app should launch onto its Home Screen. 
+6. Happy booking!
 
 ## Credits (Group 20)
 1. Vito Wong
