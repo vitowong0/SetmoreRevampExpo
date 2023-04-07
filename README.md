@@ -3,6 +3,7 @@ Final project for Computer Science 4474 - Human Computer Interaction, at Western
 
 Our project is to improve the user's experience with _Setmore_, a popular service booking app. We want to make it easier for the customer to browse, select, and book appointments. At the moment, they lack a customer app - so we are creating one. 
 
+The original repo can be found at: https://github.com/vitowong0/SetmoreRevamp
 ## Installation
 We are using React Native with Expo for cross-platform functionality. We set up our app using the instructions for _Expo Go Quickstart_.
 
