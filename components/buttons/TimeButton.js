@@ -1,8 +1,8 @@
-import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import {Colours} from '../../constants/styles';
+import React from "react";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { Colours } from "../../constants/styles";
 
-const TimeButton = ({image, time, onPress, disableButton}) => {
+const TimeButton = ({ time, onPress, disableButton }) => {
   if (!disableButton) {
     return (
       <TouchableOpacity
@@ -36,14 +36,9 @@ const styles = StyleSheet.create({
   },
 
   buttonText: {
-    fontWeight: '800',
+    fontWeight: "800",
     fontSize: 14,
-    textAlign: 'center',
+    textAlign: "center",
     color: Colours.westerngrey,
-  },
-
-  image: {
-    width: 20,
-    height: 20,
   },
 });

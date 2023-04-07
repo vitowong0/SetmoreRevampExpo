@@ -75,7 +75,7 @@ function HomeTabs() {
                   style={{width: 21, height: 24}}
                 />
               ) : (
-                <Image source={searchIcon} style={{width: 22, height: 25}} />
+                <Image source={searchIcon} style={{width: 22, height: 26}} />
               ),
           }}
         />
@@ -87,12 +87,12 @@ function HomeTabs() {
               focused ? (
                 <Image
                   source={favouritesIconGreen}
-                  style={{width: 27, height: 24}}
+                  style={{width: 27, height: 23.5}}
                 />
               ) : (
                 <Image
                   source={favouritesIcon}
-                  style={{width: 27, height: 25}}
+                  style={{width: 28, height: 26}}
                 />
               ),
           }}

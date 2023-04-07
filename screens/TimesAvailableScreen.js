@@ -97,6 +97,10 @@ function TimesAvailableScreen() {
                 <ScrollView horizontal={true}>
                   <TimeButton time={'9:30 AM'} disableButton={false} />
                   <TimeButton time={'12:30 PM'} disableButton={false} />
+                  <TimeButton time={'1:00 PM'} disableButton={false} />
+                  <TimeButton time={'1:45 PM'} disableButton={false} />
+                  <TimeButton time={'2:30 PM'} disableButton={false} />
+                  <TimeButton time={'3:15 PM'} disableButton={false} />
                   <TimeButton time={'4:20 PM'} disableButton={false} />
                   <TimeButton time={'5:00 PM'} disableButton={false} />
                 </ScrollView>
@@ -182,13 +186,13 @@ const styles = StyleSheet.create({
 
   dateTimeContainer: {
     paddingVertical: 20,
-    paddingHorizontal: 15,
+    // paddingHorizontal: 15,
   },
 
   timeContainer: {
     flexDirection: 'row',
     paddingTop: 15,
-    paddingLeft: 10,
+    // paddingLeft: 10,
   },
 
   bookAppointmentContainer: {
@@ -213,7 +217,7 @@ const styles = StyleSheet.create({
 
   boldGreyDateTime: {
     fontSize: 20,
-    paddingLeft: 10,
+    paddingLeft: 25,
     paddingTop: 10,
     color: Colours.westerngrey,
     fontWeight: 800,
@@ -221,7 +225,7 @@ const styles = StyleSheet.create({
 
   boldTurquoise: {
     fontSize: 24,
-    paddingLeft: 10,
+    paddingLeft: 25,
     paddingVertical: 10,
     color: Colours.darkturqouise,
     fontWeight: 800,
