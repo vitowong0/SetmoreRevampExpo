@@ -14,11 +14,11 @@ Follow the documentation here, although it's not necessary to run our app: https
 
 2. Clone this repo onto your local machine. 
 
-3. In your terminal, `cd` into `SetmoreRevampExpo`, and then again into `cd SetmoreRevampExpo`. (Sorry I goofed the cloning). To ensure you're in the right place, when you run `pwd`, you should get: `whatever/SetmoreRevampExpo/SetmoreRevampExpo`.
+3. In your terminal, `cd` into `SetmoreRevampExpo`, and then again into `cd SetmoreRevampExpo`. (Sorry I goofed the cloning). To ensure you're in the right place, when you run `pwd`, you should get: `.../SetmoreRevampExpo/SetmoreRevampExpo`.
 
-4. In the same terminal, run `npx expo start`. You may be asked something about using alternate ports, just type `y`. Metro Bundler should start, a QR code should appear, and some text should show below. It is critical to not close this terminal window as it will be used for all outputs.
+4. In the same terminal, run `npx expo start`. You may be asked about using alternate ports, just type `y`. Metro Bundler should start, a QR code should appear, and some text should show below. It is critical to not close this terminal window as it will be used for all outputs.
 
-5. The easiest way is to run this via Expo Go. On an iPhone, open the Camera app and scan the given QR code. On an Android, open Expo Go and use the built in QR code scanner.
+5. The easiest way is to run this via the Expo Go app. On an iPhone, after downloading Expo Go, open the Camera app and scan the given QR code. On an Android, open Expo Go and use the built in QR code scanner.
 
 6. Happy booking!
 
